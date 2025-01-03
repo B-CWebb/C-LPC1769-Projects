@@ -1,0 +1,3 @@
+These projects were all for the LPC1769 microcontroller. They cover a variety of use cases, subsystem implementations, and general design practices. These include GPIO usage, wave generation with Timer and Phase-Lock-Loop subsystems, and I2C communication using integrated I2C subsystems among others. 
+Hardware that accompanied these projects were I/O expanders, 7-segment display, 20x4 character displays, IC amplifiers, speakers, 4-bit synchronous and asynchronous counters, an IC PLL block, a 3MHz oscillator crystal, and other basic components like switches, LEDs, capacitors, and resistors. 
+Each project has an overview that describes the general purpose of the project and the specifc hardware that was used. 
