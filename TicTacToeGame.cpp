@@ -1,3 +1,21 @@
+/*
+    Author: Brandon Webb
+    Completed: Fall 2024
+    Project Overview: This project involves creating a game of Tic-Tac-Toe using a 3-by-3 grid where two players alternate turns. To implement 
+        this functionality, the I/O subsystem of the LPC1769 microcontroller is used to interface with nine switches and nine 
+        dual-color LEDs that toggle between yellow and green, representing each player's moves. 
+
+        The game manages three possible outcomes: a yellow win, a green win, or a tie. A player wins by achieving three 
+        consecutive markers of the same color in a horizontal, vertical, or diagonal line. Upon reaching a win or tie 
+        condition, the board pauses for a specified duration before resetting to its initial state to start a new game. 
+
+        Additional safeguards ensure fair play: players can only select unoccupied positions and cannot overwrite an 
+        already-claimed spot.
+ */
+
+
+
+
 #define FIO0DIR (*(volatile unsigned int *)0x2009c000)
 #define FIO0PIN (*(volatile unsigned int *)0x2009c014)
 #define FIO2DIR (*(volatile unsigned int *)0x2009c040)
