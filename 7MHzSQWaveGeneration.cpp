@@ -1,3 +1,9 @@
+/* 
+    Author: Brandon Webb
+    Completed: Fall 2024
+    Project Overview: This utilizes the LPC1769 microcontroller's Phase-Lock-Loop Subsytem to generate a 7 MHz square wave with a 50% duty cycle.
+*/
+
 #define PLL0CON (*(volatile unsigned int *)0x400FC080)
 #define PLL0CFG (*(volatile unsigned int *)0x400FC084)
 #define CLKSRCSEL (*(volatile unsigned int *)0x400FC10C)

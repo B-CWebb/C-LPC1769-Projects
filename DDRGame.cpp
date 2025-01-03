@@ -1,3 +1,13 @@
+/* 
+    Author: Brandon Webb
+    Completed: Fall 2024
+    Project Overview: This project involves creating a rhythm game utilizing an NES controller, a 20x4 (HD44780 style, non-graphical) character LCD, an audio amplifier, 
+        and a speaker. The game displays blocks moving from left to right across the four columns of the LCD. Players use the 
+        D-pad on the NES controller to match the arrows displayed in the leftmost column, triggering one of four associated 
+        musical notes and earning points for accurate timing. If the player misses a block, no points are awarded, and the note 
+        plays at a softer volume. The game includes the implementation of multiple features, contributing to a total score of 4 points.
+*/
+
 #ifdef __USE_CMSIS
 #include "LPC17xx.h"
 #endif

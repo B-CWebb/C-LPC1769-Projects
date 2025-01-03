@@ -1,3 +1,13 @@
+/* 
+    Author: Brandon Webb
+    Completed: Fall 2024
+    Project Overview: This project utilizes the LPC1769 microcontroller's I2C subsystem to interface with an MCP23017 I/O expander, 
+        a PCT2075 temperature sensor, a switch, and an HDSP-521G common-anode dual 7-segment display. The system toggles 
+        between Celsius and Fahrenheit when the switch connected to the I/O expander is pressed. The implementation focuses 
+        on displaying 2-digit integers, ignoring temperatures above 99 or below 0 degrees for both scales. Temperature readings 
+        are updated at a minimum rate of once per second.
+*/
+
 #define I2C0DAT (*(volatile unsigned int *)0x4001C02C)
 #define I2C0CONCLR (*(volatile unsigned int *) 0x4001C018)
 #define I2C0CONSET (*(volatile unsigned int *) 0x4001C000)
